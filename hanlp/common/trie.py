@@ -74,3 +74,8 @@ class Trie(Node):
                 if value is not None:
                     found.append((text[i:end], value, i, end))
         return found
+
+if __name__=='__main__':
+    trie=Trie()
+    trie['自然']='nature'
+    assert '自然' in  trie
